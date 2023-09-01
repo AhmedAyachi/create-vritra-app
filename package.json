@@ -1,0 +1,20 @@
+{
+  "name": "create-corella-app",
+  "version": "0.0.0",
+  "description": "Creates a corella-themed cordova project",
+  "main": "src/index.js",
+  "scripts": {
+    "start":"node src/index.js"
+  },
+  "bin": {
+    "create-corella-app": "./src/index.js"
+  },
+  "keywords": [
+    "corella",
+    "cordova",
+    "create",
+    "app"
+  ],
+  "author": "Ahmed Ayachi",
+  "license": "MIT"
+}
