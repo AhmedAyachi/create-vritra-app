@@ -5,7 +5,7 @@ const FileSystem=require("fs");
 const Path=require("path");
 const excluded=[".DS_Store",".git"];
 
-module.exports=async function copyFolderSync(folderPath,dest,options={}){
+module.exports=async function copyFolder(folderPath,dest,options={}){
     const {name=Path.basename(folderPath),onCopyEntry}=options,copyPath=`${dest}/${name}`;
     FileSystem.mkdirSync(copyPath);
     const entries=FileSystem.readdirSync(folderPath);
@@ -18,7 +18,7 @@ module.exports=async function copyFolderSync(folderPath,dest,options={}){
                 FileSystem.copyFileSync(entrypath,copiedTo);
             }
             else if(stat.isDirectory()){
-                copyFolderSync(entrypath,copyPath);
+                copyFolder(entrypath,copyPath);
             }
             onCopyEntry&&onCopyEntry(copiedTo,entrypath);
         }
