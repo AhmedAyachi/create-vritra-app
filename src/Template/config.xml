@@ -5,7 +5,7 @@
     <name>AppName</name>
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
     <description>App description</description>
-    <author email="aayachi032@gmail.com">Author/Organization name</author>
+    <author email="">Author/Organization name</author>
     <content src="index.html"/>
     <access origin="file://*"/>
     <allow-navigation href="file://*"/>
