@@ -1,6 +1,6 @@
 {
   "name": "appname",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "App description",
   "scripts": {
     "start": "corella-scripts start",
@@ -8,22 +8,22 @@
     "extract":"corella-scripts extract"
   },
   "devDependencies": {
-    "corella-scripts": "github:AhmedAyachi/Corella-Scripts",
     "cordova-browser": "^6.0.0",
     "cordova-plugin-appminimize": "^1.0.1",
     "cordova-plugin-clipboard": "^1.0.0",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-statusbar": "^2.4.3",
-    "cordova-plugin-webview": "github:AhmedAyachi/cordova-plugin-webview"
+    "corella-plugin-webview": "^0.0.0",
+    "corella-scripts": "^0.0.1"
   },
   "dependencies": {
-    "corella": "github:AhmedAyachi/Corella"
+    "corella": "^0.0.1"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-appminimize": {},
-      "cordova-plugin-webview": {}
+      "corella-plugin-webview": {}
     },
     "platforms": []
   }
