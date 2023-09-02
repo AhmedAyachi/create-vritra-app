@@ -25,6 +25,9 @@ then(async ({app})=>{
                 }
                 FileSystem.writeFileSync(copypath,content,{encoding:"utf8"});
             }
+            else if(name==="gitignore.txt"){
+                FileSystem.renameSync(copypath,`${Path.dirname(copypath)}/.gitignore`);
+            }
         },
     });
     await preapreApp(appPath);
