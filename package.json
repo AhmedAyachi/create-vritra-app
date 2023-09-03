@@ -1,6 +1,6 @@
 {
   "name": "create-corella-app",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Creates a corella-themed cordova project",
   "main": "src/index.js",
   "bin": {

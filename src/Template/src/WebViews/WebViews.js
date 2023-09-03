@@ -3,8 +3,8 @@
 module.exports=[
     //{name:"SecondView"},
 ].map((webview,i)=>({
+    backgroundColor:globalThis.backgroundColor,
     ...webview,
     id:webview.name.toLowerCase(),
-    backgroundColor:globalThis.backgroundColor,
     file:`index${i+1}.html`,
 }));
