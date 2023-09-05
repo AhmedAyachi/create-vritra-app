@@ -23,6 +23,7 @@
     "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-appminimize": {},
+      "cordova-plugin-ionic-keyboard": {},
       "corella-plugin-webview": {}
     },
     "platforms": []
