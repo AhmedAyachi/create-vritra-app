@@ -15,7 +15,6 @@
     <!-- <preference name="android-maxSdkVersion" value=""/> -->
     <preference name="BackgroundColor" value="#ffffff"/>
     <preference name="StatusBarOverlaysWebView" value="false"/>
-    <preference name="StatusBarBackgroundColor" value="#ffffff"/>
     <!-- <icon src=""/> -->
     <platform name="android">
         <edit-config 
