@@ -8,9 +8,7 @@
     "extract":"corella-scripts extract"
   },
   "devDependencies": {
-    "cordova-browser": "^6.0.0",
     "cordova-plugin-appminimize": "^1.0.1",
-    "cordova-plugin-clipboard": "^1.0.0",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-statusbar": "^2.4.3",
     "corella-plugin-webview": "^0.0.0",
