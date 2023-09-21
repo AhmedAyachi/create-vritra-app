@@ -10,9 +10,9 @@ function onDeviceReady(){
         window.language=Object.freeze(language);
     });
     if(cordova.platformId==="ios"){
-        window.addEventListener("touchstart",()=>{
+        window.addEventListener("touchend",()=>{
             const {activeElement}=document;
-            if((activeElement===document.body)){
+            if((activeElement!==document.body)){
                 Keyboard&&Keyboard.isVisible&&Keyboard.hide();
                 activeElement.click();
             }
