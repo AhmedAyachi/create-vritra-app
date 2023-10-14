@@ -31,7 +31,7 @@ then(async ({app})=>{
         },
     });
     await preapreApp(appPath);
-    logger.log(`\n${logger.mainColor("Corella")} app ${logger.bold(logger.minorColor("successfully"))} created.`);
+    logger.log(`\n${logger.mainColor("Wurm")} app ${logger.bold(logger.minorColor("successfully"))} created.`);
 }).
 catch(error=>{
     if(error){

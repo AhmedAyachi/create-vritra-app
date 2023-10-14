@@ -1,4 +1,4 @@
-import {View} from "corella";
+import {View} from "wurm";
 import css from "./MainView.module.css";
 
 
@@ -7,7 +7,7 @@ export default function MainView(props){
     const mainview=View({parent,id:"webview",className:css.mainview});
 
     mainview.innateHTML=`
-        <p>app created with the create-corella-app command</p>
+        <p>app created with the create-wurm-app command</p>
     `;
     
     return mainview;

@@ -1,1 +1,3 @@
-Creates a corella-themed cordova project
+
+# Wurm
+Creates a wurm-themed cordova project

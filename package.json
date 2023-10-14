@@ -1,13 +1,13 @@
 {
-  "name": "create-corella-app",
-  "version": "0.0.12",
-  "description": "Creates a corella-themed cordova project",
+  "name": "create-wurm-app",
+  "version": "0.0.1",
+  "description": "Creates a wurm-themed cordova project",
   "main": "src/index.js",
   "bin": {
-    "create-corella-app": "./src/index.js"
+    "create-wurm-app": "./src/index.js"
   },
   "keywords": [
-    "corella",
+    "wurm",
     "cordova",
     "phonegap",
     "create",
