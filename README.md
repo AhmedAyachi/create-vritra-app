@@ -1,3 +1,3 @@
 
-# Wurm
-Creates a wurm-themed cordova project
+# Vritra
+Creates a vritra-themed cordova project

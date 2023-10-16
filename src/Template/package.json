@@ -3,25 +3,25 @@
   "version": "0.0.1",
   "description": "App description",
   "scripts": {
-    "start": "wurm-scripts start",
-    "build": "wurm-scripts build",
-    "watch": "wurm-scripts watch",
-    "extract":"wurm-scripts extract"
+    "start": "vritra-scripts start",
+    "build": "vritra-scripts build",
+    "watch": "vritra-scripts watch",
+    "extract":"vritra-scripts extract"
   },
   "devDependencies": {
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-statusbar": "^3.0.0",
-    "wurm-plugin-webview": "^0.0.1",
-    "wurm-scripts": "^0.0.1"
+    "vritra-plugin-webview": "^0.0.1",
+    "vritra-scripts": "^0.0.1"
   },
   "dependencies": {
-    "wurm": "^0.0.1"
+    "vritra": "^0.0.1"
   },
   "cordova": {
     "plugins": {
       "cordova-plugin-statusbar": {},
       "cordova-plugin-ionic-keyboard": {},
-      "wurm-plugin-webview": {}
+      "vritra-plugin-webview": {}
     },
     "platforms": []
   }

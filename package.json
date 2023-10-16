@@ -1,13 +1,13 @@
 {
-  "name": "create-wurm-app",
+  "name": "create-vritra-app",
   "version": "0.0.1",
-  "description": "Creates a wurm-themed cordova project",
+  "description": "Creates a vritra-themed cordova project",
   "main": "src/index.js",
   "bin": {
-    "create-wurm-app": "./src/index.js"
+    "create-vritra-app": "./src/index.js"
   },
   "keywords": [
-    "wurm",
+    "vritra",
     "cordova",
     "phonegap",
     "create",
