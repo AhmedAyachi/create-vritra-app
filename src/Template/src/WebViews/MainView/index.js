@@ -8,8 +8,8 @@ function onDeviceReady(){
     StatusBar.styleDefault();
     StatusBar.backgroundColorByName(backgroundColor);
     WebView.defineWebViews(WebViews);
-    WebView.initiateStore(store,()=>{
-        MainView({parent:document.body});
+    WebView.initiateStore(store,(store)=>{
+        MainView({parent:document.body,store});
     });
 };
 
