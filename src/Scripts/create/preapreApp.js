@@ -2,7 +2,7 @@
 "use strict";
 
 const FileSystem=require("fs");
-const logger=require("./logger");
+const logger=require("../logger");
 const {exec,execSync}=require("child_process");
 
 module.exports=(app)=>new Promise((resolve,reject)=>{
