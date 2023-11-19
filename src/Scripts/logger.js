@@ -1,17 +1,15 @@
 
 
-const minindent=2;
-
 module.exports={
     log:(text,indent=0)=>{
         if(Array.isArray(text)){
             const {length}=text;
             for(let i=0;i<length;i++){
-                console.log(" ".repeat(minindent+indent)+text[i]);
+                console.log(" ".repeat(indent)+text[i]);
             }
         }
         else{
-            console.log(" ".repeat(minindent+indent)+text);
+            console.log(" ".repeat(indent)+text);
         }
         console.log();
     },

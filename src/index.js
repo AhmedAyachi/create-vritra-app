@@ -12,14 +12,14 @@ preapre(process.argv.slice(2)).
 then(async ({app})=>{
     const templatePath=`${__dirname}/Template`;
     const processDir=process.cwd();
-    const appname=app.name;
+    const {name:appname,packageName}=app;
     const appPath=await copyFolder(templatePath,processDir,{
         name:appname,
         onCopyEntry:(copypath)=>{
             const name=Path.basename(copypath);
             if(["config.xml","package.json"].includes(name)){
                 let content=FileSystem.readFileSync(copypath,{encoding:"utf8"});
-                content=content.replace(/appname/g,appname.toLowerCase());
+                content=content.replace(/appname/g,appname.toLowerCase()).replace(new RegExp(`android-packageName=""`),`id="${packageName}" android-packageName="${packageName}"`);
                 if(name==="config.xml"){
                     content=content.replace("AppName",appname);
                 }
@@ -30,7 +30,7 @@ then(async ({app})=>{
             }
         },
     });
-    await preapreApp(appPath);
+    await preapreApp(app);
     logger.log(`\n${logger.mainColor("Vritra")} app ${logger.bold(logger.minorColor("successfully"))} created.`);
 }).
 catch(error=>{

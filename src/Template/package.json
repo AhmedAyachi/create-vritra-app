@@ -15,7 +15,7 @@
     "vritra-scripts": "^1.0.0"
   },
   "dependencies": {
-    "vritra": "^1.0.0"
+    "vritra": "^1.0.1"
   },
   "cordova": {
     "plugins": {
@@ -24,5 +24,6 @@
       "vritra-plugin-webview": {}
     },
     "platforms": []
-  }
+  },
+  "author": "Author/Organization name"
 }
