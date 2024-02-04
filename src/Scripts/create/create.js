@@ -4,11 +4,11 @@
 const FileSystem=require("fs");
 const Path=require("path");
 const logger=require("../logger");
-const preapre=require("../prepare");
+const prepare=require("../prepare");
 const copyFolder=require("../copyFolder");
-const preapreApp=require("./preapreApp");
+const prepareApp=require("./prepareApp");
 
-module.exports=(args)=>preapre(args).then(async ({app})=>{
+module.exports=(args)=>prepare(args).then(async ({app})=>{
     const templatePath=`${__dirname}/Template`;
     const processDir=process.cwd();
     const {name:appname,packageName}=app;
@@ -29,6 +29,6 @@ module.exports=(args)=>preapre(args).then(async ({app})=>{
             }
         },
     });
-    await preapreApp(app);
+    await prepareApp(app);
     logger.log(`\n${logger.mainColor("Vritra")} app ${logger.bold(logger.minorColor("successfully"))} created.`);
 });

@@ -1,0 +1,11 @@
+{
+    "en":{
+        "appcreatedwiththecreatevritraappcommand":"app created with the create-vritra-app command"
+    },
+    "fr":{
+        "appcreatedwiththecreatevritraappcommand":"application créée avec la commande create-vritra-app"
+    },
+    "ar":{
+        "appcreatedwiththecreatevritraappcommand":"create-vritra-app تم إنشاء التطبيق باستخدام الأمر"
+    }
+}

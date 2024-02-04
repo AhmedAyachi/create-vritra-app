@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0"
-    android-packageName="" version="1.0.0" 
+    android-packageName="" version="0.0.1" 
 >
     <name>AppName</name>
     <description>App description</description>
@@ -9,19 +9,17 @@
     <access origin="file://*"/>
     <allow-navigation href="file://*"/>
     <allow-intent href="file://*"/>
-    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"/>
 
-    <preference name="android-minSdkVersion" value="26"/>
-    <!-- <preference name="android-targetSdkVersion" value=""/> -->
-    <!-- <preference name="android-maxSdkVersion" value=""/> -->
     <preference name="StatusBarStyle" value="default"/>
     <preference name="StatusBarOverlaysWebView" value="false"/>
-    <preference name="StatusBarBackgroundColor" value="#ffffff"/>
+    <preference name="StatusBarBackgroundColor" value="@color/backgroundColor"/>
     <preference name="BackgroundColor" value="#ffffff"/>
     
     <platform name="android">
+        <preference name="android-minSdkVersion" value="26"/>
+        <!-- <preference name="android-targetSdkVersion" value="33"/> -->
         <icon 
-            background="@color/white" 
+            background="@color/backgroundColor" 
             foreground="src/Assets/Icon/Icon.xml"
             src="src/Assets/Icon/Icon_512.png" density="xxxhdpi"
         />

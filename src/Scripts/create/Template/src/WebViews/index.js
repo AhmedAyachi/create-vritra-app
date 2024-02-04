@@ -1,18 +1,15 @@
 import "./index.css";
-import {langdata} from "resources";
+import {globalizeLanguage} from "resources";
 
 
 function onDeviceReady(){
-    WebView.useStore(store=>{
-        const langname=store.langname||"english";
-        const language=langdata[langname];
-        language.$name=langname;
-        window.language=Object.freeze(language);
+    WebView.useStore(({language})=>{
+        language&&globalizeLanguage(language);
     });
     if(cordova.platformId==="ios"){
         window.addEventListener("touchend",()=>{
             const {activeElement}=document;
-            if((activeElement!==document.body)){
+            if(activeElement!==document.body){
                 Keyboard&&Keyboard.isVisible&&Keyboard.hide();
                 activeElement.click();
             }

@@ -4,10 +4,10 @@ import css from "./MainView.module.css";
 
 export default function MainView(props){
     const {parent,store}=props;
-    const mainview=View({parent,id:"webview",className:css.mainview});
+    const mainview=document.webview=View({parent,id:"webview",className:css.mainview});
 
     mainview.innateHTML=`
-        <p>app created with the create-vritra-app command</p>
+        <p>${language.appcreatedwiththecreatevritraappcommand}</p>
     `;
     
     return mainview;

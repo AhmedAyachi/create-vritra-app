@@ -1,3 +1,8 @@
 
 
-export {default as langdata} from "./Language.json";
+export {default as langdata} from "./LangData.json";
+
+export const globalizeLanguage=(language)=>{
+    document.documentElement.setAttribute("lang",language.$id);
+    window.language=Object.freeze(language);
+}
