@@ -7,7 +7,7 @@ export default function MainView(props){
     const mainview=document.webview=View({parent,id:"webview",className:css.mainview});
 
     mainview.innateHTML=`
-        <p>${language.appcreatedwiththecreatevritraappcommand}</p>
+        <p>${language.$message}</p>
     `;
     
     return mainview;

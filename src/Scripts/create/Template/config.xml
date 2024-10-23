@@ -12,12 +12,13 @@
 
     <preference name="StatusBarStyle" value="default"/>
     <preference name="StatusBarOverlaysWebView" value="false"/>
-    <preference name="StatusBarBackgroundColor" value="@color/backgroundColor"/>
     <preference name="BackgroundColor" value="#ffffff"/>
     
-    <platform name="android">
+    <platform name="android">  
         <preference name="android-minSdkVersion" value="26"/>
         <!-- <preference name="android-targetSdkVersion" value="33"/> -->
+        <preference name="AndroidInsecureFileModeEnabled" value="true"/>
+        <preference name="StatusBarBackgroundColor" value="@color/backgroundColor"/>
         <icon 
             background="@color/backgroundColor" 
             foreground="src/Assets/Icon/Icon.xml"

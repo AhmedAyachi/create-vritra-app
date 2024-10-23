@@ -19,7 +19,7 @@ module.exports=(args)=>new Promise((resolve,reject)=>{
         }
     }
     else{
-        reject({message:"No app name provided or app name exceeds the 30-character limit."});
+        reject(new Error("No app name provided or app name exceeds the 30-character limit."));
     }
 });
 

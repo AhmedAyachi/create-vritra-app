@@ -11,24 +11,27 @@ const prepareApp=require("./prepareApp");
 module.exports=(args)=>prepare(args).then(async ({app})=>{
     const templatePath=`${__dirname}/Template`;
     const processDir=process.cwd();
-    const {name:appname,packageName}=app;
-    const appPath=await copyFolder(templatePath,processDir,{
-        name:appname,
+    const {name:appName,packageName}=app;
+    await copyFolder(templatePath,processDir,{
+        name:appName,
         onCopyEntry:(copypath)=>{
-            const name=Path.basename(copypath);
-            if(["config.xml","package.json"].includes(name)){
+            const entryName=Path.basename(copypath);
+            if(entryName==="package.json"){
                 let content=FileSystem.readFileSync(copypath,{encoding:"utf8"});
-                content=content.replace(/appname/g,appname.toLowerCase()).replace(new RegExp(`android-packageName=""`),`id="${packageName}" android-packageName="${packageName}"`);
-                if(name==="config.xml"){
-                    content=content.replace("AppName",appname);
-                }
+                const name=appName.split(/(?=[A-Z])/).map(word=>word.toLowerCase()).join("-");
+                content=content.replace(/appname/g,name);
                 FileSystem.writeFileSync(copypath,content,{encoding:"utf8"});
             }
-            else if(name==="gitignore.txt"){
+            else if(entryName==="config.xml"){
+                let content=FileSystem.readFileSync(copypath,{encoding:"utf8"});
+                content=content.replace(new RegExp(`android-packageName=""`),`id="${packageName}" android-packageName="${packageName}"`).replace("AppName",appName);
+                FileSystem.writeFileSync(copypath,content,{encoding:"utf8"});
+            }
+            else if(entryName==="gitignore.txt"){
                 FileSystem.renameSync(copypath,`${Path.dirname(copypath)}/.gitignore`);
             }
         },
     });
     await prepareApp(app);
-    logger.log(`\n${logger.mainColor("Vritra")} app ${logger.bold(logger.minorColor("successfully"))} created.`);
+    logger.log(`\n${logger.mainColor("vritra")} app ${logger.minorColor("successfully")} created.`);
 });
