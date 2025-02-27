@@ -3,11 +3,11 @@
     --majorFont:arial;
     --minorFont:arial;
     --mainColor:#e03065;
-    --majorColor:black;
-    --minorColor:black;
-    --textColor:black;
-    --accentColor:black;
-    --backgroundColor:white;
+    --majorColor:#000000;
+    --minorColor:#000000;
+    --textColor:#000000;
+    --accentColor:#000000;
+    --backgroundColor:#ffffff;
 }
 *{
     margin:0;

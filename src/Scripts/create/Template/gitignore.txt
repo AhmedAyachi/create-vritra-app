@@ -7,3 +7,5 @@ www
 hooks
 !*/**/hooks/
 typings
+cypress
+cypress.config.js
