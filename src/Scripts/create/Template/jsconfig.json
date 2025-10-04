@@ -9,5 +9,11 @@
             "components":["Components/index.js"],
             "localdb":["LocalDB/index.js"]
         }
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "build",
+        "coverage"
+    ]
 }

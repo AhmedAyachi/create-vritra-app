@@ -11,34 +11,35 @@
     <allow-intent href="file://*"/>
 
     <preference name="StatusBarStyle" value="default"/>
-    <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="BackgroundColor" value="#ffffff"/>
+    <preference name="StatusBarBackgroundColor" value="#ffffff"/>
+    <preference name="StatusBarOverlaysWebView" value="false"/>
     
-    <platform name="android">  
+    <platform name="android">
         <preference name="android-minSdkVersion" value="26"/>
-        <!-- <preference name="android-targetSdkVersion" value="33"/> -->
+        <!-- <preference name="android-targetSdkVersion" value="35"/> -->
+        <preference name="android-compileSdkVersion" value="35"/>
         <preference name="AndroidInsecureFileModeEnabled" value="true"/>
-        <preference name="StatusBarBackgroundColor" value="@color/backgroundColor"/>
+        <preference name="AndroidPostSplashScreenTheme" value="@style/MainActivity"/>
+        <preference name="AndroidWindowSplashScreenBackground" value="@color/backgroundColor"/>
+        <preference name="AndroidWindowSplashScreenAnimatedIcon" value="src/Assets/Icon/Icon.xml"/>
         <icon 
             background="@color/backgroundColor" 
             foreground="src/Assets/Icon/Icon.xml"
             src="src/Assets/Icon/Icon_512.png" density="xxxhdpi"
         />
-        <edit-config 
-            file="app/src/main/AndroidManifest.xml"
-            target="/manifest/application/activity[@android:name='MainActivity']"
-            mode="merge"
-        >
-            <activity android:theme="@style/MainActivity"/>
-        </edit-config>
         <resource-file src="src/Assets/Config/android/MainActivity.xml" target="/app/src/main/res/values/MainActivity.xml"/>
-        <resource-file src="src/Assets/LaunchScreen/LaunchScreen.xml" target="/app/src/main/res/drawable/launchscreen.xml"/>
     </platform>
 
     <platform name="ios">
         <preference name="UseSwiftLanguageVersion" value="5"/>
         <preference name="SplashScreenDelay" value="1000"/>
         <preference name="ShowSplashScreenSpinner" value="false"/>
+        <config-file parent="NSAppTransportSecurity" target="*-Info.plist">
+            <dict>
+                <key>NSAllowsArbitraryLoads</key> <true/>
+            </dict>
+        </config-file>
         <!-- <icon src="src/Assets/Icon/Icon_20.png" width="20"/>
         <icon src="src/Assets/Icon/Icon_29.png" width="29"/> -->
         <icon src="src/Assets/Icon/Icon_40.png" width="40"/>
@@ -62,6 +63,6 @@
         <icon src="src/Assets/Icon/Icon_172.png" width="172"/> -->
         <icon src="src/Assets/Icon/Icon_180.png" width="180"/>
         <!-- <icon src="src/Assets/Icon/Icon_196.png" width="196"/> -->
-        <splash src="src/Assets/LaunchScreen/Default@2x~universal~anyany.png"/>
+        <splash src="src/Assets/Config/ios/LaunchScreen/Default@2x~universal~anyany.png"/>
     </platform>
 </widget>

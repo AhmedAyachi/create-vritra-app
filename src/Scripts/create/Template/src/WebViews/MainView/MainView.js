@@ -7,7 +7,7 @@ export default function MainView(props){
     const mainview=View({parent,id:"webview",className:css.mainview});
 
     mainview.innateHTML=`
-        <p>${language.$message}</p>
+        <p>${language.get("$message")}</p>
     `;
     
     return mainview;

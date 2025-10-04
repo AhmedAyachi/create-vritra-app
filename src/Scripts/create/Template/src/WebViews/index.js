@@ -4,7 +4,7 @@ import {globalizeLanguage} from "resources";
 
 function onDeviceReady(){
     WebView.useStore(({language})=>{
-        language&&globalizeLanguage(language);
+        if(language) globalizeLanguage(language);
     });
     if(cordova.platformId==="ios"){
         window.addEventListener("touchend",()=>{
@@ -25,7 +25,7 @@ document.addEventListener("deviceready",onDeviceReady,false);
         value:parseFloat(style.getPropertyValue("font-size")),
     });
     [
-        "mainFont","majorFont","minorFont",
+        //"mainFont","majorFont","minorFont",
         "mainColor","majorColor","minorColor",
         "textColor","accentColor","backgroundColor",
     ].forEach(name=>{

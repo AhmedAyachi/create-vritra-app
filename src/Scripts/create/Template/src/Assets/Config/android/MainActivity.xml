@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="MainActivity" parent="Theme.AppCompat.NoActionBar">
+    <style name="MainActivity" parent="@style/Theme.AppCompat.NoActionBar">
         <item name="android:windowFullscreen">false</item>
         <item name="android:fitsSystemWindows">true</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowIsTranslucent">false</item>
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">false</item>
         <item name="android:statusBarColor">@color/backgroundColor</item>
         <item name="android:navigationBarColor">@color/backgroundColor</item>
-        <item name="android:windowBackground">@drawable/launchscreen</item>
     </style>
+    <color name="mainColor">#e03065</color>
     <color name="backgroundColor">#ffffff</color>
 </resources>

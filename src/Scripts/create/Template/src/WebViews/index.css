@@ -8,6 +8,7 @@
     --textColor:#000000;
     --accentColor:#000000;
     --backgroundColor:#ffffff;
+    --spacingHorizontal:5em;
 }
 *{
     margin:0;

@@ -1,11 +1,14 @@
 import {langdata} from "resources";
+ 
 
+export const configStore=()=>new Promise(resolve=>{
+    const store={
+        language:getLanguage(),
+    };
+    WebView.initiateStore(store,resolve);
+});
 
-export const store={
-    language:getLanguage(),
-};
-
-function getLanguage(){
+const getLanguage=()=>{
     const langId=localStorage.getItem("langId");
     let language=langdata[langId];
     if(language){

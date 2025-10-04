@@ -1,7 +1,7 @@
 {
   "name": "create-vritra-app",
-  "version": "1.4.0",
-  "description": "Creates a vritra-themed cordova project",
+  "version": "1.5.0",
+  "description": "creates a vritra-themed cordova project",
   "main": "src/index.js",
   "bin": {
     "create-vritra-app": "./src/index.js"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-     "url": "https://github.com/AhmedAyachi/create-vritra-app"
+    "url": "https://github.com/AhmedAyachi/create-vritra-app"
   },
   "homepage": "https://vritrajs.github.io/#getstarted#startanewapp",
   "author": "Ahmed Ayachi",

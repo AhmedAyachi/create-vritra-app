@@ -3,6 +3,11 @@
 export {default as langdata} from "./LangData.json";
 
 export const globalizeLanguage=(language)=>{
-    document.documentElement.setAttribute("lang",language.$id);
-    window.language=Object.freeze(language);
+    const langId=language.$id||language._id||language.id;
+    localStorage.setItem("langId",langId);
+    document.documentElement.setAttribute("lang",langId);
+    window.language=Object.freeze({
+        ...language,
+        get:(key)=>key?(language[key]||key):"",
+    });
 }

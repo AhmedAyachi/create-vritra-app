@@ -9,3 +9,6 @@ hooks
 typings
 cypress
 cypress.config.js
+
+#macos
+.DS_Store
