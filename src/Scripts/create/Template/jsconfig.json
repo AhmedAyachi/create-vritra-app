@@ -1,13 +1,12 @@
 {
     "compilerOptions":{
-        "baseUrl":"./src/",
         "paths":{
-            "assets":["Assets/index.js"],
-            "screens":["Screens/index.js"],
-            "actions":["Store/Actions/index.js"],
-            "resources":["Resources/index.js"],
-            "components":["Components/index.js"],
-            "localdb":["LocalDB/index.js"]
+            "assets":["./src/Assets/index.js"],
+            "localdb":["./src/LocalDB/index.js"],
+            "screens":["./src/Screens/index.js"],
+            "actions":["./src/Store/Actions/index.js"],
+            "resources":["./src/Resources/index.js"],
+            "components":["./src/Components/index.js"]
         }
     },
     "exclude": [

@@ -10,6 +10,6 @@
         <item name="android:statusBarColor">@color/backgroundColor</item>
         <item name="android:navigationBarColor">@color/backgroundColor</item>
     </style>
-    <color name="mainColor">#e03065</color>
+    <color name="brandColor">#e03065</color>
     <color name="backgroundColor">#ffffff</color>
 </resources>

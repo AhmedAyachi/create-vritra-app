@@ -18,7 +18,7 @@
     <platform name="android">
         <preference name="android-minSdkVersion" value="26"/>
         <!-- <preference name="android-targetSdkVersion" value="35"/> -->
-        <preference name="android-compileSdkVersion" value="35"/>
+        <preference name="android-compileSdkVersion" value="36"/>
         <preference name="AndroidInsecureFileModeEnabled" value="true"/>
         <preference name="AndroidPostSplashScreenTheme" value="@style/MainActivity"/>
         <preference name="AndroidWindowSplashScreenBackground" value="@color/backgroundColor"/>

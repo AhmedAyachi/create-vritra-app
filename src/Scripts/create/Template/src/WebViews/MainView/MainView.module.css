@@ -8,3 +8,10 @@
     font-size:0.75em;
     text-align:center;
 }
+
+
+@media(min-width:15cm){
+    .mainview>p{
+        font-size:1.15em;
+    }
+}
